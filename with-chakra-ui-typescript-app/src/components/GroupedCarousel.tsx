@@ -9,7 +9,7 @@ interface AliceCarouselProps {}
 
 const GroupCarousel: React.FC<AliceCarouselProps> = ({}) => {
   const [activeIndex, setActiveSlide] = useState(0);
-  const [isDrag, setIsDrag] = useState(false); // used to prevent clicking on dragging
+  const [isDrag, _] = useState(false); // used to prevent clicking on dragging
   const refCar = useRef();
 
   let items = [];
